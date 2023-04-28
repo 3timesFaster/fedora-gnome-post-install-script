@@ -63,11 +63,11 @@ dnf update -y
 # Check if Intel integrated graphics card is present
 if lspci -vnn | grep VGA | grep -iq "intel"; then
     echo "Intel integrated graphics detected. Installing intel-media-driver."
-    sudo dnf install intel-media-driver
+    dnf install intel-media-driver
 # Check if Nvidia graphics card is present
 elif lspci -vnn | grep VGA | grep -iq "nvidia"; then
     echo "Nvidia graphics card detected. Installing nvidia-vaapi-driver."
-    sudo dnf install nvidia-vaapi-driver
+    dnf install nvidia-vaapi-driver
     echo "Remember to use the Howto/Nvidia page on the RPM fuision site to install the proprietary drivers"
     echo "https://rpmfusion.org/Howto/NVIDIA?highlight=%28%5CbCategoryHowto%5Cb%29"
 else
