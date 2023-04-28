@@ -50,7 +50,7 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 	rpmfusion-nonfree-release-tainted \
 	gnome-tweaks
 dnf groupupdate core \
-	multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin \
+	multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin --allowerasing \
 	sound-and-video
 dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 
