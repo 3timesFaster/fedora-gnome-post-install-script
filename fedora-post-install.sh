@@ -42,7 +42,8 @@ dnf remove -y gnome-connections \
 	rhythmbox \
 	totem \
 	libreoffice-core \
-	gnome-boxes
+	gnome-boxes \
+	unoconv
 	
 # Dnf firmware and multimedia 
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
