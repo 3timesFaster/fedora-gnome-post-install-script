@@ -48,7 +48,6 @@ dnf remove -y gnome-connections \
 # Dnf firmware and multimedia 
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
        	https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
-	rpmfusion-nonfree-release-tainted \
 	gnome-tweaks
 dnf groupupdate -y core \
 	multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin --allowerasing \
