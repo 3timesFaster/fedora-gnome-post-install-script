@@ -17,12 +17,12 @@ else
 fi
 
 # Check if fastmirror is already set to True
-if grep -q "^fastmirror=True$" /etc/dnf/dnf.conf; then
-    echo "fastmirror is already set to True"
+if grep -q "^fastestmirror=True$" /etc/dnf/dnf.conf; then
+    echo "fastestmirror is already set to True"
 else
     # Add fastmirror=True to the end of the file
-    echo "fastmirror=True" >> /etc/dnf/dnf.conf
-    echo "fastmirror has been set to True"
+    echo "fastestmirror=True" >> /etc/dnf/dnf.conf
+    echo "fastestmirror has been set to True"
 fi
 
 # remove junk from workstation
