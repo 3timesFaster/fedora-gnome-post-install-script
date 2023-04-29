@@ -56,7 +56,7 @@ dnf groupupdate -y core \
 dnf --repo=rpmfusion-nonfree-tainted install -y "*-firmware"
 
 # Gnome extensions
-flatpak install flathub com.mattjakeman.ExtensionManager 
+flatpak install -y flathub com.mattjakeman.ExtensionManager 
 
 # update
 dnf update -y
