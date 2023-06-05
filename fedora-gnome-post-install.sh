@@ -54,9 +54,6 @@ dnf groupupdate -y core \
 	sound-and-video
 dnf --repo=rpmfusion-nonfree-tainted install -y "*-firmware"
 
-# Gnome extensions
-flatpak install -y flathub com.mattjakeman.ExtensionManager 
-
 # update
 dnf update -y
 
